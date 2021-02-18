@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="159dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_Schedule"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="5dp"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:src="@drawable/schedule" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/hitam"
+                    android:text="SCHEDULE"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_club"
+            android:layout_width="149dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="5dp"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:src="@drawable/list" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="CLUB"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            card_view:cardCornerRadius="5dp"
+                android:id="@+id/juve"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/jv" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/hitam"
+                    android:text="FC Porto vs Juventus: Skor 2-1"
+                    android:textSize="20dp"
+                    android:typeface="serif"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="30dp"/>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                card_view:cardCornerRadius="5dp"
+                android:id="@+id/sevila"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="159dp"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="118dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/sv"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:text="Hasil Liga Champion Tadi Malam:Sevilla vs Dortmund"
+                        android:textSize="20dp"
+                        android:typeface="serif"
+                        android:textColor="@color/hitam"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="30dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/bb"
+                android:layout_height="130dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="159dp"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="118dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/barca"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:text="Hasil Pertandingan Barcelona vs PSG: Skor 1-4"
+                        android:textSize="20dp"
+                        android:typeface="serif"
+                        android:textColor="@color/hitam"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="20dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/mu"
+                android:layout_height="130dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="159dp"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="118dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@drawable/mm"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:text="Jelang Pertemuan Liga Europa Adnan Januzaj Masih Cinta MU"
+                        android:textSize="20dp"
+                        android:typeface="serif"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/hitam"
+                        android:layout_marginBottom="20dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </LinearLayout>
+</LinearLayout>
